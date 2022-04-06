@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PARCIAL2.descripcion">
+    <ContentPage.Content>
+        <ScrollView> 
+        <StackLayout>
+            <Label Text="Nombre:" />
+            <Label
+                        HorizontalTextAlignment="Center"
+                        Text="DOE"
+                        x:Name="txtnombre" />
+            <Label Text="precio" />
+            <Label
+                        HorizontalTextAlignment="Center"
+                        Text="007"
+                        x:Name="txtprecio" />
+            <Label Text="descripcion" />
+            <Label
+                        HorizontalTextAlignment="Center"
+                        Text="1000"
+                        x:Name="txtdesc" />
+            <StackLayout>
+                <Label Text="numero de personas"/>
+                <Entry x:Name="txtNpersonas" Placeholder="Numero de personas" Keyboard="Numeric"/>
+                <Label Text="numero de productos"/>
+
+                <Entry x:Name="txtNproduc" Placeholder="Numero de productos" Keyboard="Numeric"/>
+                <Label Text="valor del porcentaje"/>
+                <Entry x:Name="txtporcentaje" Placeholder="Valor del porcentaje" Keyboard="Numeric"/>
+               
+
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                
+                <Label Text="VALOR DE LA CUENTA" Grid.Column ="0" Grid.Row="0"/>
+                <Label Text="VALOR DE LA PROPINA" Grid.Column ="1" Grid.Row="0"/>
+                        <Label Text="APORTE POR PERSIONA" Grid.Column ="2" Grid.Row="0"/>
+                        <Label Text="VALOR TOTAL" Grid.Column ="3" Grid.Row="0"/>
+                    
+                        <Label x:Name="valorcuenta" Text="" Grid.Column ="3" Grid.Row="1" />
+                        <Label x:Name="valorpropina" Text="" Grid.Column ="1" Grid.Row="1"/>
+                        <Label x:Name="aportepers" Text="" Grid.Column ="2" Grid.Row="1" />
+                        <Label x:Name="valortotal" Text="" Grid.Column ="0" Grid.Row="1" />
+                    </Grid>
+                    <Button Clicked="Button_Clicked" Text="calcular"/>
+
+
+                </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

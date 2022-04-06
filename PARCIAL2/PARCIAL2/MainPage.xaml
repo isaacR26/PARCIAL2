@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PARCIAL2.MainPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="White"
+                          Offset="0.4"/>
+            <GradientStop Color="Gray"
+                          Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
+            <StackLayout VerticalOptions="Center" >
+
+                <Image Source="logo2.png" WidthRequest="150" HeightRequest="150"/>
+                <FlexLayout Direction="Row"  JustifyContent="Center">
+                    <Label Text="Agregar " FontSize="20"  HorizontalOptions="Center"/>
+                    <Label Text="Producto" FontSize="20" FontAttributes="Bold" />
+
+                </FlexLayout>
+                <StackLayout>
+                   
+                        <Frame Grid.Row="1" BackgroundColor="Transparent" HeightRequest="200"  >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10"/>
+
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="0"/>
+                                    <RowDefinition Height="*"/>
+                                <RowDefinition Height="40"/>
+
+
+                            </Grid.RowDefinitions>
+                                
+                                <Entry x:Name="txtnombre" Placeholder="Nombre" Grid.Column="1" />
+                                <Entry x:Name="txtprecio" Placeholder="Precio" Grid.Column="1"  Grid.Row="2" Keyboard="Numeric"/>
+                                <Entry x:Name="txtdesc" Placeholder="Descripcion" Grid.Column="1" Grid.Row="3"/>
+                                
+                                <Button Clicked="Button_Clicked" Text="GUARDAR" Grid.Row="4" 
+                                        BackgroundColor="Transparent" TextColor="White" FontAttributes="Bold" 
+                                        BorderColor="White" BorderWidth="2" Grid.Column="1">
+
+                        </Button>
+
+                            </Grid>
+                        </Frame>
+
+
+                        
+                  
+
+
+
+
+
+                    
+
+
+                   
+
+               
+            </StackLayout>
+            </StackLayout>
+        </ContentPage>
+
+ 
+ 
+
